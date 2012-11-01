@@ -10,8 +10,6 @@ let is_prime n =
   else if n mod 2 = 0 then false
   else iter 3
 
-let conv c = int_of_char c - int_of_char '0'
-
 let max_pandigital_prime l =
   let rec iter acc = function
     | [] -> if is_prime acc then Some acc else None
