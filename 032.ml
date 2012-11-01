@@ -31,7 +31,7 @@ let sum = List.fold_left (+) 0
 let _ =
   let max_num = 9999999 in
   let digits = 9 in
-  let digit x = int_of_float (log10 (float x)) in
+  let digit x = int_of_float (log10 (float x)) inxp
   let over_capacity m n =
     (digit m) + (digit n) + (digit (m*n)) > digits
   in
